@@ -168,4 +168,31 @@ Syntaxnya seperti ini:
     * Center: posisi item akan dikemas ke bagian tengah baris
     * Space-between: letak item akan didistribusikan secara merata, item pertama ada pada bagian start dan item terakhir pada bagian end.
     * Space-around: letak item akan didistribusikan secara merata dengan space/ruang yang ada diantara item.
+## Algorithm
+* Algoritma adalah sederetan langkah-langkah logis yang disusun secara sistematis untuk memecahkan suatu masalah. Disebut Logis karena setiap langkah bisa diketahui dengan pasti. Algoritma lebih merupakan alur pemikiran untuk menyelesaikan suatu pekerjaan atau suatu masalah.
+* Struktur data adalah cara penyimpanan, pengorganisasian , dan pengaturan data di dalam media penyimpanan komputer sehingga data tersebut dapat digunakan secara efisien.
+* Manfaat Algoritma dan Struktur Data:
+  * Membantu menyelesaikan suatu masalah dengan logika dan juga sistematis.
+  * Mempermudah pembuatan program yang dapat menyelesaikan masalah tertentu.
+  * Indeks pada struktur data mempercepat proses pencarian data tertentu.
+  * Struktur data bisa berpengaruh ke tingkat efektifitas algoritma.
+* Contoh Algoritma sederhana
+  Algoritma menghitung luas persegi panjang
+  Analisis :
+  Input : p (panjang) dan l (lebar)
+  Luas Persegi Panjang  L = p*l
+  Algoritma :
+  Inputkan panjang
+  Inputkan lebar
+  Rumus untuk menghitung L  yaitu L= p*l
+  Nilai  L (Luas ) akan dicetak sebagai output ke perangkat output (keluaran)
+* Menerapkan algoritma dengan JavaScript
+  ````
+  let panjang = 10
+  let lebar = 5
+  let luas = panjang*lebar
+  console.log(luas)
+
+  //outputnya 50
+  ````
 
