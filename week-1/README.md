@@ -49,6 +49,7 @@ Git adalah alat yang digunakan untuk membuat hidup programmer lebih mudah, semen
      **git status**, digunakan untuk mengetahui sebuah status dari sebuah repository lokal.
    * Git Add
      **git add .**, adalah perintah yang digunakan untuk menambahkan file baru di repository yang dipilih.
+   * Git Commit
      **git commit -m "Tambahkan pesan"**, digunakan untuk menyimpan perubahan yang sudah dilakukan, namun tidak ada perubahan yang terjadi pada remote repository.
    * Git Remote
      **git remote**, digunakan untuk membuat user terhubung ke remote repository.
@@ -119,3 +120,52 @@ Git adalah alat yang digunakan untuk membuat hidup programmer lebih mudah, semen
      </footer>
 
      </body>
+   * Deploy HTML
+     Deploy adalah sebuah proses untuk menyebarkan aplikasi yang sudah kita kerjakan supaya bisa digunakan oleh orang-orang. Untuk melakukan hal tersebut kita bisa menggunakan layanan yang bernama Netlify.
+## CSS
+* CSS adalah bahasa yang digunakan untuk mendesain halaman website. Dengan CSS, kita bisa mengubah warna, menggunakan font custom, editing text format, mengatur tata letak, dan lainnya.
+* Ada 3 cara menyisipkan CSS ke dalam HTML:
+  Inline Tag : menggunakan CSS langsung di atribute elemnt html
+  ```<p style="color: blue;">Hello</p>```
+  Internal Tag : menggunakan tag ```<style></style>``` di bagian head
+  External Tag : menggunakan file CSS terpisah dengan HTML
+* CSS Syntax adalah syntax yang digunakan untuk menunjuk atau memilih HTML element mana yang ingin diberi style (dihias). CSS syntax terdiri dari selector, property, dan value.
+Syntaxnya seperti ini:
+  ```
+  selector {
+     property: value;
+  }
+  ```
+  Misalnya kita memiliki element paragraf ```<p>``` yang ingin diubah menjadi warna biru
+  ```
+  <!-- Pada file HTML -->
+   <p>Hello World!</p>
+  ```
+  ```
+  <!-- Pada file CSS -->
+  p {
+     color: blue;
+  }
+  ```
+* Flexbox adalah cara untuk mengatur layout. Flexbox memiliki kemampuan untuk menyesuaikan layout secara otomatis. Macam-macam property flex:
+  * Properti **flex-direction** digunakan untuk mengatur letak item child. Ada 4 value flex-direction:
+    * row (default): secara default letak item child membentuk sebuah baris dari kiri ke kanan.
+    * row-reverse: letak item child membentuk sebuah baris dari kanan ke kiri
+    * column: letak item child membentuk sebuah baris dari atas ke bawah
+    * column-reverse: letak item child membentuk sebuah baris dari bawah ke atas
+  * Defaultnya, item pada flex akan mencoba masuk atau fit ke dalam satu baris atau row. Kita bisa membuat item yang berlebihan untuk lanjut ke baris atau kolom berikutnya menggunakan property **flex-wrap**. Property ini memiliki 3 value:
+    * Nowrap (default): semua item akan berada di satu baris
+    * Wrap: item flex akan pindah ke baris selanjutnya apabila tidak muat, dari atas ke bawah
+    * Wrap-reverse: sama seperti wrap, tetapi arah nya dari bawah ke atas.
+  * Properti **flex-flow** digunakan sebagai shortcut untuk set up flex-direction dan flex-wrap bersamaan. Ada 4 value pada flex-flow:
+    * row nowrap
+    * column wrap
+    * column reverse
+    * row-reverse wrap-reverse
+  * Properti **justify-content** digunakan untuk mengatur tata letak dan space antar item child secara horizontal atau main axis. Justify-content memiliki beberapa value yaitu:
+    * Flex- start: posisi item akan dikemas pada bagian awal “flex-direction”
+    * Flex-end: posisi item akan dikemas pada bagian akhir “flex-direction”
+    * Center: posisi item akan dikemas ke bagian tengah baris
+    * Space-between: letak item akan didistribusikan secara merata, item pertama ada pada bagian start dan item terakhir pada bagian end.
+    * Space-around: letak item akan didistribusikan secara merata dengan space/ruang yang ada diantara item.
+
