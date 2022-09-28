@@ -35,7 +35,7 @@ Git adalah alat yang digunakan untuk membuat hidup programmer lebih mudah, semen
   * Setup Awal
     ``` 
     git config --global user.name "Uzi Fauziah"
-    git config --global user.email "example@email.com"
+    git config --global user.email "uzifauziah34@gmail.com"
     ```
    * Membuat Repository
      ```
@@ -47,16 +47,75 @@ Git adalah alat yang digunakan untuk membuat hidup programmer lebih mudah, semen
      ```
    * Git Status
      **git status**, digunakan untuk mengetahui sebuah status dari sebuah repository lokal.
-     ![git status]()
    * Git Add
      **git add .**, adalah perintah yang digunakan untuk menambahkan file baru di repository yang dipilih.
-     ![git add]()
-   * Git Commit
      **git commit -m "Tambahkan pesan"**, digunakan untuk menyimpan perubahan yang sudah dilakukan, namun tidak ada perubahan yang terjadi pada remote repository.
-     ![git commit]()
    * Git Remote
      **git remote**, digunakan untuk membuat user terhubung ke remote repository.
    * Git Push
      **git push**, digunakan dalam mengirimkan perubahan file yang dilakukan setelah di commit ke remote repository.
    * Git Clone
      **git clone**, perintah yang digunakan untuk membuat salinan repository lokal.
+## HTML
+   * HTML adalah singkatan dari Hypertext Markup Language yang digunakan untuk membuat kerangka atau struktur untuk Web pages (halaman website) di internet.
+   * Ada 2 tools utama yang harus dipersiapkan untuk membuat HTML yaitu browser (contohnya google chrome) dan code editor (contohnya visual studio code)
+   * HTML Structure
+     ```
+     <!DOCTYPE html>
+     <html lang="en">
+     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Blog</title>
+        <link href="coba.css" type="text/css" rel="stylesheet"/>
+     </head>
+     <body>
+        Hello, This is My Website
+     </body>
+     </html>
+     ```
+   * HTML Anatomy
+     ```<p>Hello World!</p>```disebut element 
+     ```<p>``` disebut opening tag
+     ```</p>``` disebut closing tag
+     Tulisan "Hello World!" disebut content
+   * HTML Attributes
+     Attribute adalah properties dari sebuah HTML Element. Semua HTML Element memiliki attribute. Contohnya id, class, scr, href, dan lain-lain.
+   * HTML Tag
+     * Single Tag
+       ```<br/>``` untuk memasukkan satu baris putus
+       ```<img src=" " alt=" " />``` untuk menampilkan gambar
+     * Double Tag
+       ```<p></p>``` untuk membuat paragraf
+       ```<h1></h1>``` untuk membuat heading
+       ```<ol></ol>``` untuk membuat list berurutan
+       ```<ul></ul>``` untuk membuat list tidak berurutan
+       ```<li></li>```untuk membuat sebuah item daftar
+       ```<div></div>``` untuk mengelompokkan elemen atau bermacam-macam tag agar menjadi suatu grup.
+       ```<video></video>``` untuk menampilkan video
+       ```<table></table>``` untuk membuat tabel
+   * Semantic HTML
+     Menggunakan elemen HTML sesuai dengan kebutuhan konten. Contohnya yaitu header,  nav, section, main, footer, dll.
+     ```
+     <body>
+
+     <header>
+       <h1>My Website</h1>
+     </header>
+
+     <nav>
+       <a href="#">Home</a> |
+       <a href="#">About</a> |
+       <a href="#">Contact</a>
+     </nav>
+
+     <article>
+        <h1>Welcome To My Website!</h1>
+     <p>Hello, My name is Uzi Fauziah Azhari</p>
+     </article>
+
+     <footer>
+       Copyright; 2022 by woozi05
+     </footer>
+
+     </body>
