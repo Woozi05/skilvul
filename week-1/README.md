@@ -105,14 +105,14 @@ Git adalah alat yang digunakan untuk membuat hidup programmer lebih mudah, semen
      </header>
 
      <nav>
-       <a href="#">Home</a> |
-       <a href="#">About</a> |
+       <a href="#">Home</a>
+       <a href="#">About</a>
        <a href="#">Contact</a>
      </nav>
 
      <article>
         <h1>Welcome To My Website!</h1>
-     <p>Hello, My name is Uzi Fauziah Azhari</p>
+        <p>Hello, My name is Uzi Fauziah Azhari</p>
      </article>
 
      <footer>
@@ -120,6 +120,7 @@ Git adalah alat yang digunakan untuk membuat hidup programmer lebih mudah, semen
      </footer>
 
      </body>
+     ```
    * Deploy HTML
      Deploy adalah sebuah proses untuk menyebarkan aplikasi yang sudah kita kerjakan supaya bisa digunakan oleh orang-orang. Untuk melakukan hal tersebut kita bisa menggunakan layanan yang bernama Netlify.
 ## CSS
@@ -195,4 +196,170 @@ Syntaxnya seperti ini:
 
   //outputnya 50
   ````
-
+## JavaScript Dasar - Intro JavaScript
+* Javascript adalah bahasa pemograman yang digunakan untuk logic pada sebuah website. Javascript juga dapat membuat website menjadi interaktif dan dinamis.
+* Javascript dijalankan melalui browser pada device setiap user.
+* Tipe data adalah klasifikasi yang kita berikan untuk berbagai macam data yang digunakan dalam programming. Ada 6 tipe data fundamental pada Javascript:
+  * number
+    Tipe data number adalah tipe data yang mengandung semua angka termasuk angka desimal. Contoh: 2, 4, 1200, 23.42
+  * string
+    Tipe data string adalah grup karakter yang ada pada keyboard laptop/PC kita yaitu letters (huruf), number (angka), spaces (spasi), symbol, dan lainnya. Harus diawali dan diakhiri dengan single quotes ‘ … ‘ ataupun double quotes “ … “.
+  * boolean
+    Tipe data boolean adalah tipe data yang hanya mempunyai 2 buah nilai. 2 buah nilai tersebut adalah TRUE (benar) or FALSE (salah).
+  * null
+    Tipe data null adalah tipe data yang diartikan bahwa sebuah variable/data tidak memiliki nilai.
+  * undefined
+    Tipe data undefined adalah tipe data yang merepresentasikan varibel/data yang tidak memiliki nilai. Undefined berbeda dengan null. Undefined didapat dari hasil berikut:
+     * Nilai dari pemanggilan variabel yang belum didefinisikan
+     * Nilai dari pemanggilan element array yang tidak ada
+     * Nilai dari pemanggilan property objek yang tidak ada
+     * Nilai dari pemanggilan fungsi yang tidak mengembalikan nilai (return)
+     * Nilai dari parameter fungsi yang tidak memiliki argumen
+  * object
+    Tipe data object adalah koleksi data yang saling berhubungan (related). Tipe data pbject dapat menyimpan data dengan tipe data apapun (number, string, boolean, dan lainnya). Tipe data object mempunyai key dan value.
+* Operator pada JavaScript
+  * Assignment Operator (=)
+    Assignment operator digunakan untuk menyimpan sebuah nilai pada variabel.
+    ```
+    let nama = "Uzi"
+    ```
+  * Mathematical Assignment Operator
+    ```
+    let a = 5
+    a += 1   // sama dengan a = a + 1
+    console.log(a)
+    //output 6
+    ```
+    * Selain itu ada juga -=, *= dan /=
+  * Increment dan Decrement
+    Gunakan increment atau decrement untuk menambah atau mengurangi sebesar 1 nilai.
+    ```
+    let a = 3
+    a++   
+    console.log(a)
+    //output 4
+    ```
+    ```
+    let a = 3
+    a--   
+    console.log(a)
+    //output 2
+    ```
+  * Arithmetic Operator
+    * Arithmetic operator adalah operator yang melibatkan operasi matematika.
+    * Tambah (+)
+    * Kurang (-)
+    * Perkalian (*)
+    * Pembagian (/)
+    * Modulus (%)
+  * Comparison Operator
+    Comparison operator adalah operator yang membandingkan satu nilai dengan nilai lainnya. Hasil operasi yang melibatkan comparison operator adalah antara true or false. Simbol comparison operator:
+    * Lebih kecil dari : <
+    * Lebih besar dari: >
+    * Lebih kecil atau sama dengan: <=
+    * Lebih besar atau sama dengan: >=
+    * Sama dengan: ===
+    * Tidak sama dengan: !==
+  * Logical Operator
+    Logical operator biasa digunakan untuk sebuah CONDITIONAL pada pemograman. Menghasilkan nilai BOOLEAN yaitu TRUE or FALSE. Simbol dari Logical Operator adalah sebagai berikut:
+    AND operator : &&
+    OR operator: ||
+    NOT operator: !
+- ### JavaScript - Conditional
+  Conditional merupakan statement percabangan yang menggambarkan suatu kondisi. Conditional statement akan mengecek kondisi spesifik dan menjalankan perintah berdasarkan kondisi tersebut. Yang dicek adalah apakah kondisi tersebut TRUE (benar). Jika TRUE maka code didalam kondisi tersebut dijalankan. Contoh Conditional:
+  * If Statement
+    ```
+    if (true){
+        console.log("Pesan ini akan tampil")
+    }
+    //output "Pesan ini akan tampil"
+    ```
+  * IF … ELSE Statement
+    ```
+    let haus = false
+    if (haus){
+        console.log("ambil minum")
+    }else {
+        console.log("tidak ambil minum")
+    }
+    //output "tidak ambil minum"
+    ```
+   * IF .. ELSE IF Statement
+     ```
+     let lampuLaluLintas = "kuning"
+     if (lampuLaluLintas === "merah"){
+         console.log("berhenti")
+     }else if (lampuLaluLintas === "kuning"){
+         console.log("hati-hati")
+     }else if (lampuLaluLintas === "hijau"){
+         console.log("maju")
+      }else {
+         console.log("lampu rusak")
+     }
+     //output "hati-hati"
+     ```
+   * Truthy and Falsy
+     Truthy and falsy digunakan untuk mengecek apakah variabel telah terisi namun tidak mementingkan nilainya.
+     ```
+     let a = "kucing"
+     if (a){
+        console.log(a)
+     }else {
+        console.log("Variabel tidak ada")
+     }
+     //output "kucing"
+     ```
+   * Switch Case Conditional
+     Gunakan switch case jika kondisi dan percabangan terlalu banyak.
+     ```
+     var warna = "merah";
+     switch (warna){
+	 case "hitam":
+		teks = "warna hitam";
+		break;
+	 case "merah":
+		teks = "Warna merah";
+		break;
+	 case "hijau":
+		teks = "Warna hijau";
+		break;
+	 default:
+	    teks = "Warna tidak terdeteksi";
+     }
+     //output "Warna merah"
+     ```
+   * Ternary Operator
+     Ternary operator merupakan short-syntax dari statement if … else.
+     ```
+     let isNowSale = true
+     isNowSale ? console.log("lets shopping now") : console.log("shopping later")
+     ```
+- ### JavaScript - Looping
+  Looping adalah statement yang mengulang sebuah instruksi hingga kondisi terpenuhi atau jika kondisi stop/berhenti tercapai.
+  * FOR LOOP
+    FOR LOOP merupakan instruksi pengulangan yang dapat kita berikan pada program yang kita kembangkan. Gunakan FOR LOOP jika kita tahu seberapa banyak nilai pasti untuk pengulangannya
+    ```
+    let nilai = 1 ; 
+    for (nilai; nilai <= 10 ; nilai++){
+        console.log(nilai) 
+    } 
+    ```
+  * WHILE LOOP
+    WHILE LOOP akan menjalankan instruksi pengulangan kondisi bernilai TRUE. Gunakan WHILE LOOP jika kita tidak mengetahui jumlah pasti pengulangan.
+    ```
+    let count = 1 ; 
+    while (count < 10){
+        console.log(count);
+        count ++ ;
+    ```
+   * DO WHILE LOOP
+     Perulangan do/while akan melakukan perulangan sebanyak 1 kali terlebih dahulu, lalu mengecek kondisi yang ada di dalam kurung while.
+    ```
+    count = 1 ;
+    do {
+        console.log(count);
+        count ++ ;
+    } while (count <= 10)
+    ```
+   * NESTED LOOP
+     Nested loop digunakan untuk membuat perulangan bersarang atau perulangan di dalam perualangan.
