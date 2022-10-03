@@ -1,3 +1,4 @@
+# Rangkuman Week 2
 ## JavaScript Dasar
 ### Scope and Function
 * ### Scope
@@ -286,3 +287,101 @@
   console.log(date.getMonth()); // 9
   console.log(date.getDate()); // 3
   ```
+## DOM (Document Object Model)
+   Dom adalah jembatan supaya bahasa pemrograman dapat berinteraksi dengan dokumen HTML. Dengan DOM, JavaScript dapat memanipulasi HTML. DOM bukan bagian dari JavaScript, melainkan browser (Web API)
+   * Memanipulasi Element HTML
+     * Mencari Element HTML
+       ```
+       //Mencari 1 element dengan id tertentu
+       document.getElementById("header")
+
+       //Mencari beberapa element sekaligus dengan class tertentu
+       document.getElementsByClassName("Container")
+
+       //Mencari element menggunakan kombinasi selector (seperti di CSS)
+       document.querySelector("#header p span")
+     * Mengubah Konten Element
+       * Element.textContent
+         document.getElementById("header").textContent = "Teks Heading"
+         ![contoh .textContent]()
+       * Element.innerHTML
+         document.getElementById("header").innerHTML = "```<h1>Hello World</h1>```"
+     * Membuat Element HTML
+       ```
+       // Jika ada element ini di file HTML
+       <div id="header"></div>
+
+       // Lalu kita gunakan kode JavaScript ini untuk membuat sebuah element heading
+       const heading = document.createElement("h1")
+       heading.textContent = "Ini Heading"
+
+       document.getElementByID("header").appendChild(heading)
+
+       // Hasilnya akan sama seperti jika kita menulis
+       <div id="header">
+          <h1>Ini Heading</h1>
+       </div>
+       ```
+       .createElement() -> .textContent untuk mengubah kontennya -> .appendChild() untuk menambahkan ke DOM
+
+       ```
+       // append vs appendChild
+       // appendChild tidak bisa input data string
+       app.append("menggunakan append")
+       app.appendChild("appendChild") // error
+       ```
+     * Remove Element
+       ```
+       let end = document.getElementById("end")
+       end.remove()
+       ```
+     * Attributes
+       ```
+       console.log(link.attributes) // [] list attribute
+       console.log(link.getAttribute("href")); // ambil isi attribute
+       link.setAttribute("id", "google") // add attribute
+       ```
+     * Memberikan Style
+       ```
+       link.style.color = "black"
+       link.style.border = "1px solid black"
+       link.style.padding = "5px 20px"
+       link.style.backgroundColor = "aqua"
+       link.style.removeProperty("border") // menghapus style property
+       ```
+     * Mendapatkan Style dari Element
+       ```
+       let tess = document.getElementById("tess")
+       let tessStyle = getComputedStyle(tess)
+       console.log(tessStyle.height)
+       ```
+     * Class
+       ```
+       let container = document.getElementsByClassName("container")[0]
+       console.log(container.classList); // [] list of class
+       container.classList.add("home") // menambahnkan class
+       container.classList.remove("container") // menghapus class
+       ```
+    * Interaksi User (Events)
+      User experience itu bersifat dua arah: selain menampilkan element HTML, halaman web juga harus bisa menangkap interaksi user. Misalnya seperti: User melakukan scroll, User melakukan klik pada elemen tertentu, Halaman web di-load, Form di-submit, dan sebagainya.
+    * Ada dua cara yang biasanya dilakukan untuk handle event di Javascript.
+      * Cara Pertama: Menggunakan Atribut
+        HTML memiliki atribut event untuk menentukan fungsi yang akan dijalankan saat event terjadi.
+        ```
+        <button onclick="Hello()">Klik Me</button>
+        ```
+        **onclick** adalah atribut HTML untuk menentukan aksi saat event klik pada sebuah elemen. Atribut ini bisa diisi dengan nama fungsi atau ekspresi javascript.
+      * Cara Kedua: Method addEventListener()
+        Method addEventListerner() merupakan method yang terdapat pada object DOM. Object ini mewakili sebuah elemen HTML di Javascript.
+        ```
+        button.addEventListener('click', function(e){
+  
+        });
+        ```
+        
+
+
+
+
+
+
