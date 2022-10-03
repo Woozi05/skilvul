@@ -303,7 +303,7 @@
      * Mengubah Konten Element
        * Element.textContent
          document.getElementById("header").textContent = "Teks Heading"
-         ![contoh .textContent]()
+         ![contoh .textContent](https://github.com/Woozi05/skilvul/blob/988aa56e7d40c293e39bc60918a2b47fc508348e/week-2/gambar/dom.png)
        * Element.innerHTML
          document.getElementById("header").innerHTML = "```<h1>Hello World</h1>```"
      * Membuat Element HTML
