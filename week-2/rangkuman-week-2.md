@@ -362,22 +362,22 @@
        container.classList.add("home") // menambahnkan class
        container.classList.remove("container") // menghapus class
        ```
-    * Interaksi User (Events)
-      User experience itu bersifat dua arah: selain menampilkan element HTML, halaman web juga harus bisa menangkap interaksi user. Misalnya seperti: User melakukan scroll, User melakukan klik pada elemen tertentu, Halaman web di-load, Form di-submit, dan sebagainya.
-    * Ada dua cara yang biasanya dilakukan untuk handle event di Javascript.
-      * Cara Pertama: Menggunakan Atribut
-        HTML memiliki atribut event untuk menentukan fungsi yang akan dijalankan saat event terjadi.
-        ```
-        <button onclick="Hello()">Klik Me</button>
-        ```
-        **onclick** adalah atribut HTML untuk menentukan aksi saat event klik pada sebuah elemen. Atribut ini bisa diisi dengan nama fungsi atau ekspresi javascript.
-      * Cara Kedua: Method addEventListener()
-        Method addEventListerner() merupakan method yang terdapat pada object DOM. Object ini mewakili sebuah elemen HTML di Javascript.
-        ```
-        button.addEventListener('click', function(e){
+   * Interaksi User (Events)
+     User experience itu bersifat dua arah: selain menampilkan element HTML, halaman web juga harus bisa menangkap interaksi user. Misalnya seperti: User melakukan scroll, User melakukan klik pada elemen tertentu, Halaman web di-load, Form di-submit, dan sebagainya.
+     Ada dua cara yang biasanya dilakukan untuk handle event di Javascript.
+     * Cara Pertama: Menggunakan Atribut
+       HTML memiliki atribut event untuk menentukan fungsi yang akan dijalankan saat event terjadi.
+       ```
+       <button onclick="Hello()">Klik Me</button>
+       ```
+       **onclick** adalah atribut HTML untuk menentukan aksi saat event klik pada sebuah elemen. Atribut ini bisa diisi dengan nama fungsi atau ekspresi javascript.
+     * Cara Kedua: Method addEventListener()
+       Method addEventListerner() merupakan method yang terdapat pada object DOM. Object ini mewakili sebuah elemen HTML di Javascript.
+       ```
+       button.addEventListener('click', function(e){
   
-        });
-        ```
+       });
+       ```
         
 
 
